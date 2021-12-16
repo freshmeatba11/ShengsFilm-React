@@ -1,0 +1,29 @@
+:root {
+  --theme-black: hsl(224, 100%, 4%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP", "Noto Serif TC", serif;
+}
+#root > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: var(--theme-black);
+}
+ul {
+  list-style-type: none;
+}
+::selection {
+  background: rgb(180, 180, 180);
+  color: white;
+}
+
+@import "./nav";
+@import "./burger";

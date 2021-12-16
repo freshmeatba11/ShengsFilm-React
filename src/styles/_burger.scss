@@ -1,0 +1,83 @@
+.burgerComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  // burger button
+  label.burger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 101;
+
+    div.container {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0.5rem;
+      .bar1,
+      .bar2,
+      .bar3 {
+        // 漢堡線的部分
+        width: 21px;
+        height: 2px;
+        background: var(--theme-black);
+        margin: 7px 7px;
+        transition: 0.4s;
+        pointer-events: none;
+      }
+    }
+  }
+  nav#burgerNav {
+    position: absolute;
+    height: 120vh;
+    width: 80%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    background-color: #dadada;
+    transform: translateX(-115%);
+    transition: 0.5s;
+    box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.5);
+
+    > a {
+      display: block;
+      opacity: 0.8;
+      font-size: 1.875rem;
+      margin: 4rem 2rem 1rem;
+    }
+    > ul {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      li a {
+        opacity: 0.6;
+        display: block;
+        padding: 0px 2rem 0.5rem;
+        font-size: 1rem;
+      }
+    }
+    &.open {
+      transform: translateX(0%);
+    }
+  }
+
+  .change .bar1 {
+    /* Rotate first bar */
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .change .bar2 {
+    /* Fade out the second bar */
+    opacity: 0;
+  }
+  .change .bar3 {
+    /* Rotate last bar */
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
+  #menu-switcher {
+    display: none;
+  }
+}
