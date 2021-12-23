@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BurgerComponent from "./burger-component";
+import useRWD from "../useRWD";
 
 const NavComponent = () => {
+  let device = useRWD();
+
   return (
     <div className="nav-component">
       <BurgerComponent />

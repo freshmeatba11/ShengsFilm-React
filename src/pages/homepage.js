@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useRWD from "../useRWD";
 import ImgSliderComponent from "../components/img-slider-component";
 import slideImg01 from "../assets/images/imgSlider/slideImg01.png";
@@ -23,7 +24,12 @@ const Homepage = () => {
   console.log(window.innerWidth);
   console.log(device);
   return (
-    <div>
+    <div className="homePage">
+      {device === "mobile" && (
+        <Link to={"/"}>
+          <h1>Sheng's Film</h1>
+        </Link>
+      )}
       <ImgSliderComponent imgArr={imgArr1} animationDelay={animationDelay1} />
       {device === "mobile" && (
         <div>
