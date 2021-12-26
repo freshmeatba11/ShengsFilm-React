@@ -2,8 +2,8 @@ import React from "react";
 
 const Direct01Page = () => {
   return (
-    <div>
-      <section className="left">
+    <div className="galleryDetailPage">
+      <section className="top">
         <div className="videoBox">
           <iframe
             src="https://www.youtube-nocookie.com/embed/pPs5AYIFNWc"
@@ -14,7 +14,7 @@ const Direct01Page = () => {
           ></iframe>
         </div>
       </section>
-      <section className="right">
+      <section className="bottom">
         <div>
           <h2>
             朱宗慶打擊樂團 2019擊樂劇場《泥巴》

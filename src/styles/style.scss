@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: "Noto Serif JP", "Noto Serif TC", serif;
+  font-weight: normal;
 }
 #root > div {
   display: flex;
@@ -21,7 +22,7 @@ ul {
   list-style-type: none;
 }
 ::selection {
-  background: rgb(180, 180, 180);
+  background: hsl(0, 0%, 71%);
   color: white;
 }
 
@@ -30,3 +31,4 @@ ul {
 @import "./slider";
 @import "./homepage";
 @import "./galleryPage";
+@import "./galleryDetailPage";

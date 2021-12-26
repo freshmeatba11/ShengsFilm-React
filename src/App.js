@@ -4,6 +4,8 @@ import NavComponent from "./components/nav-component";
 import Homepage from "./pages/homepage";
 import DirectPage from "./pages/directPage";
 import Direct01Page from "./pages/direct01Page";
+import Direct02Page from "./pages/direct02Page";
+import Direct03Page from "./pages/direct03Page";
 import "./styles/style.css";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/direct" element={<DirectPage />} />
         <Route path="/direct01" element={<Direct01Page />} />
+        <Route path="/direct02" element={<Direct02Page />} />
+        <Route path="/direct03" element={<Direct03Page />} />
         <Route path="/trailer" element={<Homepage />} />
         <Route path="/interview" element={<Homepage />} />
         <Route path="/behind_the_Scene" element={<Homepage />} />
