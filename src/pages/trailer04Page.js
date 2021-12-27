@@ -8,9 +8,9 @@ const Trailer04Page = () => {
           <iframe
             src="https://www.youtube-nocookie.com/embed/9D1crLQaJdo"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </section>

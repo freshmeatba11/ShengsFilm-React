@@ -8,9 +8,9 @@ const Interview03Page = () => {
           <iframe
             src="https://www.youtube-nocookie.com/embed/l0HttJ11V4A"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </section>
@@ -20,7 +20,6 @@ const Interview03Page = () => {
           <h2>2018 音樂會《有一種嚮往あこがれ》</h2>
           <h2>團員專訪—我們眼中的櫻井弘二</h2>
         </div>
-        <h3></h3>
         <p>
           客戶 Client : 朱宗慶打擊樂團
           <br />

@@ -8,9 +8,9 @@ const Interview02Page = () => {
           <iframe
             src="https://www.youtube-nocookie.com/embed/sejXrU0G-Lc"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </section>
@@ -20,7 +20,6 @@ const Interview02Page = () => {
           <h2>《追夢，不在遠方》</h2>
           <h2>星坊酒業總經理 須家昌 專訪</h2>
         </div>
-        <h3></h3>
         <p>
           客戶 Client : 朱宗慶打擊樂團
           <br />
