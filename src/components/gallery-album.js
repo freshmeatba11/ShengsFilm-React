@@ -12,6 +12,22 @@ import trailerCardText01 from "../assets/images/trailer/trailerCardText01.png";
 import trailerCardText02 from "../assets/images/trailer/trailerCardText02.png";
 import trailerCardText03 from "../assets/images/trailer/trailerCardText03.png";
 import trailerCardText04 from "../assets/images/trailer/trailerCardText04.png";
+import interviewCard01 from "../assets/images/interview/interviewCard01.png";
+import interviewCard02 from "../assets/images/interview/interviewCard02.png";
+import interviewCard03 from "../assets/images/interview/interviewCard03.png";
+import interviewCardText01 from "../assets/images/interview/interviewCardText01.png";
+import interviewCardText02 from "../assets/images/interview/interviewCardText02.png";
+import interviewCardText03 from "../assets/images/interview/interviewCardText03.png";
+import behindTheSceneCard01 from "../assets/images/behindTheScene/behindTheSceneCard01.png";
+import behindTheSceneCard02 from "../assets/images/behindTheScene/behindTheSceneCard02.png";
+import behindTheSceneCard03 from "../assets/images/behindTheScene/behindTheSceneCard03.png";
+import behindTheSceneCardText01 from "../assets/images/behindTheScene/behindTheSceneCardText01.png";
+import behindTheSceneCardText02 from "../assets/images/behindTheScene/behindTheSceneCardText02.png";
+import behindTheSceneCardText03 from "../assets/images/behindTheScene/behindTheSceneCardText03.png";
+import editCard01 from "../assets/images/edit/editCard01.png";
+import editCard02 from "../assets/images/edit/editCard02.png";
+import editCardText01 from "../assets/images/edit/editCardText01.png";
+import editCardText02 from "../assets/images/edit/editCardText02.png";
 
 const GalleryAlbum = {
   direct: {
@@ -31,6 +47,28 @@ const GalleryAlbum = {
     trailerCardText02,
     trailerCardText03,
     trailerCardText04,
+  },
+  interview: {
+    interviewCard01,
+    interviewCard02,
+    interviewCard03,
+    interviewCardText01,
+    interviewCardText02,
+    interviewCardText03,
+  },
+  behindTheScene: {
+    behindTheSceneCard01,
+    behindTheSceneCard02,
+    behindTheSceneCard03,
+    behindTheSceneCardText01,
+    behindTheSceneCardText02,
+    behindTheSceneCardText03,
+  },
+  edit: {
+    editCard01,
+    editCard02,
+    editCardText01,
+    editCardText02,
   },
 };
 

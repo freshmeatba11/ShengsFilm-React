@@ -10,6 +10,10 @@ import TrailerPage from "./pages/trailerPage";
 import Trailer01Page from "./pages/trailer01Page";
 import Trailer03Page from "./pages/trailer03Page";
 import Trailer04Page from "./pages/trailer04Page";
+import InterviewPage from "./pages/interviewPage";
+import Interview01Page from "./pages/interview01Page";
+import Interview02Page from "./pages/interview02Page";
+import Interview03Page from "./pages/interview03Page";
 import "./styles/style.css";
 
 function App() {
@@ -26,7 +30,10 @@ function App() {
         <Route path="/trailer01" element={<Trailer01Page />} />
         <Route path="/trailer03" element={<Trailer03Page />} />
         <Route path="/trailer04" element={<Trailer04Page />} />
-        <Route path="/interview" element={<Homepage />} />
+        <Route path="/interview" element={<InterviewPage />} />
+        <Route path="/interview01" element={<Interview01Page />} />
+        <Route path="/interview02" element={<Interview02Page />} />
+        <Route path="/interview03" element={<Interview03Page />} />
         <Route path="/behind_the_Scene" element={<Homepage />} />
         <Route path="/edit" element={<Homepage />} />
         <Route path="/contect" element={<Homepage />} />
