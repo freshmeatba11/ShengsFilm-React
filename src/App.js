@@ -21,6 +21,7 @@ import BehindTheScene03Page from "./pages/behindTheScene03Page";
 import EditPage from "./pages/editPage";
 import Edit01Page from "./pages/edit01Page";
 import Edit02Page from "./pages/edit02Page";
+import ContectPage from "./pages/contectPage";
 import "./styles/style.css";
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
         <Route path="/edit" element={<EditPage />} />
         <Route path="/edit01" element={<Edit01Page />} />
         <Route path="/edit02" element={<Edit02Page />} />
-        <Route path="/contect" element={<Homepage />} />
+        <Route path="/contect" element={<ContectPage />} />
       </Routes>
     </div>
   );
