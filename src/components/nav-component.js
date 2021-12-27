@@ -25,7 +25,7 @@ const NavComponent = () => {
           <Link to={"/interview"}>Interview</Link>
         </li>
         <li>
-          <Link to={"/behind_the_Scene"}>Behind the Scene</Link>
+          <Link to={"/behind_the_scene"}>Behind the Scene</Link>
         </li>
         <li>
           <Link to={"/edit"}>Edit</Link>

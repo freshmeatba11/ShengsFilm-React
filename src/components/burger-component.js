@@ -40,7 +40,7 @@ const BurgerComponent = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/behind_the_Scene"} onClick={burgerBtnHandler}>
+            <Link to={"/behind_the_scene"} onClick={burgerBtnHandler}>
               Behind the Scene
             </Link>
           </li>

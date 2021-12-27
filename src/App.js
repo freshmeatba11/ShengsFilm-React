@@ -14,6 +14,10 @@ import InterviewPage from "./pages/interviewPage";
 import Interview01Page from "./pages/interview01Page";
 import Interview02Page from "./pages/interview02Page";
 import Interview03Page from "./pages/interview03Page";
+import BehindTheScenePage from "./pages/behindTheScenePage";
+import BehindTheScene01Page from "./pages/behindTheScene01Page";
+import BehindTheScene02Page from "./pages/behindTheScene02Page";
+import BehindTheScene03Page from "./pages/behindTheScene03Page";
 import "./styles/style.css";
 
 function App() {
@@ -34,7 +38,10 @@ function App() {
         <Route path="/interview01" element={<Interview01Page />} />
         <Route path="/interview02" element={<Interview02Page />} />
         <Route path="/interview03" element={<Interview03Page />} />
-        <Route path="/behind_the_Scene" element={<Homepage />} />
+        <Route path="/behind_the_scene" element={<BehindTheScenePage />} />
+        <Route path="/behind_the_scene01" element={<BehindTheScene01Page />} />
+        <Route path="/behind_the_scene02" element={<BehindTheScene02Page />} />
+        <Route path="/behind_the_scene03" element={<BehindTheScene03Page />} />
         <Route path="/edit" element={<Homepage />} />
         <Route path="/contect" element={<Homepage />} />
       </Routes>
