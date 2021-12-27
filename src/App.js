@@ -18,6 +18,9 @@ import BehindTheScenePage from "./pages/behindTheScenePage";
 import BehindTheScene01Page from "./pages/behindTheScene01Page";
 import BehindTheScene02Page from "./pages/behindTheScene02Page";
 import BehindTheScene03Page from "./pages/behindTheScene03Page";
+import EditPage from "./pages/editPage";
+import Edit01Page from "./pages/edit01Page";
+import Edit02Page from "./pages/edit02Page";
 import "./styles/style.css";
 
 function App() {
@@ -42,7 +45,9 @@ function App() {
         <Route path="/behind_the_scene01" element={<BehindTheScene01Page />} />
         <Route path="/behind_the_scene02" element={<BehindTheScene02Page />} />
         <Route path="/behind_the_scene03" element={<BehindTheScene03Page />} />
-        <Route path="/edit" element={<Homepage />} />
+        <Route path="/edit" element={<EditPage />} />
+        <Route path="/edit01" element={<Edit01Page />} />
+        <Route path="/edit02" element={<Edit02Page />} />
         <Route path="/contect" element={<Homepage />} />
       </Routes>
     </div>
