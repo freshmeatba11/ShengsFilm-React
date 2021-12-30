@@ -15,7 +15,7 @@ const Trailer01Page = () => {
         </div>
       </section>
       <section className="bottom">
-        <div class="titleWrap">
+        <div className="titleWrap">
           <h2>第十屆臺灣國際打擊樂節</h2>
           <h2>《追夢，不在遠方》</h2>
           <h2>30sec Trailer</h2>

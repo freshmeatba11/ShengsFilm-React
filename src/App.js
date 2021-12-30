@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 import NavComponent from "./components/nav-component";
 import Homepage from "./pages/homepage";
 import DirectPage from "./pages/directPage";
@@ -25,32 +26,52 @@ import ContectPage from "./pages/contectPage";
 import "./styles/style.css";
 
 function App() {
+  let location = useLocation();
   return (
     <div>
       <NavComponent />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/direct" element={<DirectPage />} />
-        <Route path="/direct01" element={<Direct01Page />} />
-        <Route path="/direct02" element={<Direct02Page />} />
-        <Route path="/direct03" element={<Direct03Page />} />
-        <Route path="/trailer" element={<TrailerPage />} />
-        <Route path="/trailer01" element={<Trailer01Page />} />
-        <Route path="/trailer03" element={<Trailer03Page />} />
-        <Route path="/trailer04" element={<Trailer04Page />} />
-        <Route path="/interview" element={<InterviewPage />} />
-        <Route path="/interview01" element={<Interview01Page />} />
-        <Route path="/interview02" element={<Interview02Page />} />
-        <Route path="/interview03" element={<Interview03Page />} />
-        <Route path="/behind_the_scene" element={<BehindTheScenePage />} />
-        <Route path="/behind_the_scene01" element={<BehindTheScene01Page />} />
-        <Route path="/behind_the_scene02" element={<BehindTheScene02Page />} />
-        <Route path="/behind_the_scene03" element={<BehindTheScene03Page />} />
-        <Route path="/edit" element={<EditPage />} />
-        <Route path="/edit01" element={<Edit01Page />} />
-        <Route path="/edit02" element={<Edit02Page />} />
-        <Route path="/contect" element={<ContectPage />} />
-      </Routes>
+      <SwitchTransition>
+        <CSSTransition
+          classNames="fade"
+          key={location.pathname}
+          timeout={1500}
+          unmountOnExit={true}
+          appear
+        >
+          <Routes location={location}>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/direct" element={<DirectPage />} />
+            <Route path="/direct01" element={<Direct01Page />} />
+            <Route path="/direct02" element={<Direct02Page />} />
+            <Route path="/direct03" element={<Direct03Page />} />
+            <Route path="/trailer" element={<TrailerPage />} />
+            <Route path="/trailer01" element={<Trailer01Page />} />
+            <Route path="/trailer03" element={<Trailer03Page />} />
+            <Route path="/trailer04" element={<Trailer04Page />} />
+            <Route path="/interview" element={<InterviewPage />} />
+            <Route path="/interview01" element={<Interview01Page />} />
+            <Route path="/interview02" element={<Interview02Page />} />
+            <Route path="/interview03" element={<Interview03Page />} />
+            <Route path="/behind_the_scene" element={<BehindTheScenePage />} />
+            <Route
+              path="/behind_the_scene01"
+              element={<BehindTheScene01Page />}
+            />
+            <Route
+              path="/behind_the_scene02"
+              element={<BehindTheScene02Page />}
+            />
+            <Route
+              path="/behind_the_scene03"
+              element={<BehindTheScene03Page />}
+            />
+            <Route path="/edit" element={<EditPage />} />
+            <Route path="/edit01" element={<Edit01Page />} />
+            <Route path="/edit02" element={<Edit02Page />} />
+            <Route path="/contect" element={<ContectPage />} />
+          </Routes>
+        </CSSTransition>
+      </SwitchTransition>
     </div>
   );
 }
