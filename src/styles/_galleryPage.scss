@@ -33,3 +33,38 @@
     }
   }
 }
+
+@media screen and (min-width: 993px) {
+  .galleryPage {
+    h1 {
+      display: none;
+    }
+    .threeCards {
+      display: flex;
+      justify-content: center;
+      width: 90vw;
+      padding-top: 3rem;
+      div.cards {
+        padding: 1rem;
+        a {
+          width: 25vw;
+          height: 25vw;
+          img {
+            width: 25vw;
+            height: 25vw;
+          }
+          .mobileFilter {
+            width: 25vw;
+            height: 25vw;
+            border-radius: 0;
+            opacity: 0;
+            transition: all 0.2s ease;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

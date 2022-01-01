@@ -1,13 +1,49 @@
 .nav-component {
   a h1 {
     display: none;
-    // padding-top: 3.25rem;
-    // font-size: 2rem;
-    // opacity: 0.8;
-    // margin-bottom: 2rem;
   }
-
   ul {
     display: none;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .nav-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a h1 {
+      display: block;
+      color: var(--theme-black);
+      padding-top: 4rem;
+      opacity: 0.8;
+      font-size: 3rem;
+      transition: all 0.2s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    ul {
+      width: 80vw;
+      display: flex;
+      justify-content: space-around;
+      color: var(--theme-black);
+      padding: 4rem 0 2rem;
+      li {
+        a {
+          color: var(--theme-black);
+          opacity: 0.4;
+          font-size: 1.5rem;
+          transition: all 0.2s ease;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &.active a {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

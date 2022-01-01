@@ -22,14 +22,25 @@ import BehindTheScene03Page from "./pages/behindTheScene03Page";
 import EditPage from "./pages/editPage";
 import Edit01Page from "./pages/edit01Page";
 import Edit02Page from "./pages/edit02Page";
-import ContectPage from "./pages/contectPage";
+import ContactPage from "./pages/contactPage";
 import "./styles/style.css";
 
 function App() {
   let location = useLocation();
   return (
     <div>
-      <NavComponent />
+      <SwitchTransition>
+        <CSSTransition
+          classNames="fade"
+          key={location.pathname}
+          timeout={1500}
+          unmountOnExit={true}
+          appear
+        >
+          <NavComponent />
+        </CSSTransition>
+      </SwitchTransition>
+
       <SwitchTransition>
         <CSSTransition
           classNames="fade"
@@ -68,7 +79,7 @@ function App() {
             <Route path="/edit" element={<EditPage />} />
             <Route path="/edit01" element={<Edit01Page />} />
             <Route path="/edit02" element={<Edit02Page />} />
-            <Route path="/contect" element={<ContectPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </CSSTransition>
       </SwitchTransition>

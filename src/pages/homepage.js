@@ -21,8 +21,7 @@ const Homepage = () => {
   const animationDelay2 = "secondSlide";
   const animationDelay3 = "thirdSlide";
   const animationDelay4 = "forthSlide";
-  console.log(window.innerWidth);
-  console.log(device);
+
   return (
     <div className="homePage">
       {device === "mobile" && (

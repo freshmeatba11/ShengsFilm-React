@@ -50,8 +50,8 @@ const BurgerComponent = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/contect"} onClick={burgerBtnHandler}>
-              Contect
+            <Link to={"/contact"} onClick={burgerBtnHandler}>
+              Contact
             </Link>
           </li>
         </ul>

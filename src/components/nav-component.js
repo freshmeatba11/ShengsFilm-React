@@ -1,37 +1,62 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BurgerComponent from "./burger-component";
-import useRWD from "../useRWD";
 
 const NavComponent = () => {
-  let device = useRWD();
+  const clickHandler = (e) => {
+    //用localStorage儲存這次按的button
+    let buttonPath = e.target.innerText.toLowerCase();
+    localStorage.setItem("buttonPath", buttonPath);
+  };
+
+  const isActive = (path) => {
+    //比對path是不是上一個按的button
+    let buttonPath = localStorage.getItem("buttonPath");
+    if (buttonPath === path) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   return (
     <div className="nav-component">
       <BurgerComponent />
 
-      <Link to={"/"}>
+      <Link to={"/"} onClick={clickHandler}>
         <h1>Sheng's Film </h1>
       </Link>
 
       <ul>
-        <li>
-          <Link to={"/direct"}>Direct</Link>
+        <li className={isActive("direct") ? "active" : ""}>
+          <Link to={"/direct"} onClick={clickHandler}>
+            Direct
+          </Link>
         </li>
-        <li>
-          <Link to={"/trailer"}>Trailer</Link>
+        <li className={isActive("trailer") ? "active" : ""}>
+          <Link to={"/trailer"} onClick={clickHandler}>
+            Trailer
+          </Link>
         </li>
-        <li>
-          <Link to={"/interview"}>Interview</Link>
+        <li className={isActive("interview") ? "active" : ""}>
+          <Link to={"/interview"} onClick={clickHandler}>
+            Interview
+          </Link>
         </li>
-        <li>
-          <Link to={"/behind_the_scene"}>Behind the Scene</Link>
+        <li className={isActive("behind the scene") ? "active" : ""}>
+          <Link to={"/behind_the_scene"} onClick={clickHandler}>
+            Behind the Scene
+          </Link>
         </li>
-        <li>
-          <Link to={"/edit"}>Edit</Link>
+        <li className={isActive("edit") ? "active" : ""}>
+          <Link to={"/edit"} onClick={clickHandler}>
+            Edit
+          </Link>
         </li>
-        <li>
-          <Link to={"/contect"}>Contect</Link>
+        <li className={isActive("contact") ? "active" : ""}>
+          <Link to={"/contact"} onClick={clickHandler}>
+            Contact
+          </Link>
         </li>
       </ul>
     </div>

@@ -43,6 +43,43 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 993px) {
+  .nav-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-component a h1 {
+    display: block;
+    color: var(--theme-black);
+    padding-top: 4rem;
+    opacity: 0.8;
+    font-size: 3rem;
+    transition: all 0.2s ease;
+  }
+  .nav-component a h1:hover {
+    opacity: 1;
+  }
+  .nav-component ul {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    color: var(--theme-black);
+    padding: 4rem 0 2rem;
+  }
+  .nav-component ul li a {
+    color: var(--theme-black);
+    opacity: 0.4;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+  }
+  .nav-component ul li a:hover {
+    opacity: 1;
+  }
+  .nav-component ul li.active a {
+    opacity: 1;
+  }
+}
 .burgerComponent {
   display: flex;
   flex-direction: column;
@@ -121,6 +158,11 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 993px) {
+  .burgerComponent {
+    display: none;
+  }
+}
 .imgSliderBox {
   width: 100vw;
 }
@@ -221,6 +263,20 @@ ul {
     filter: alpha(opacity=0);
   }
 }
+@media screen and (min-width: 993px) {
+  .imgSliderBox {
+    padding-top: 7rem;
+  }
+  .imgSliderBox .coverflow {
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .imgSliderBox .coverflow:hover a {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+}
 .homePage {
   display: flex;
   flex-direction: column;
@@ -267,6 +323,38 @@ ul {
   overflow: hidden;
 }
 
+@media screen and (min-width: 993px) {
+  .galleryPage h1 {
+    display: none;
+  }
+  .galleryPage .threeCards {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    padding-top: 3rem;
+  }
+  .galleryPage .threeCards div.cards {
+    padding: 1rem;
+  }
+  .galleryPage .threeCards div.cards a {
+    width: 25vw;
+    height: 25vw;
+  }
+  .galleryPage .threeCards div.cards a img {
+    width: 25vw;
+    height: 25vw;
+  }
+  .galleryPage .threeCards div.cards a .mobileFilter {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  .galleryPage .threeCards div.cards a .mobileFilter:hover {
+    opacity: 1;
+  }
+}
 .galleryDetailPage {
   margin-top: 13rem;
   width: 100vw;
@@ -294,7 +382,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 .galleryDetailPage .bottom .titleWrap {
   display: flex;
@@ -332,63 +420,103 @@ ul {
   margin-bottom: 3rem;
 }
 
-.contectPage {
+@media screen and (min-width: 993px) {
+  .galleryDetailPage {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: unset;
+  }
+  .galleryDetailPage .top {
+    width: 50%;
+    padding: 1rem 2rem 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .galleryDetailPage .bottom {
+    width: 40%;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .galleryDetailPage .bottom .titleWrap {
+    justify-content: flex-start;
+  }
+  .galleryDetailPage .bottom div {
+    position: inherit;
+  }
+  .galleryDetailPage .bottom div h2 {
+    font-size: 1.5rem;
+    line-height: 170%;
+    text-align: start;
+    font-weight: 600;
+  }
+  .galleryDetailPage .bottom h3 {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 180%;
+  }
+  .galleryDetailPage .bottom p {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+  }
+}
+.contactPage {
   display: flex;
   flex-direction: column;
 }
-.contectPage h1 {
-  padding-top: 3.25rem;
-  padding-bottom: 2rem;
+.contactPage h1 {
+  padding: 3.25rem 0 2rem;
   font-size: 2rem;
   text-decoration: none;
   color: var(--theme-black);
   text-align: center;
 }
-.contectPage section.selfPic {
+.contactPage section.selfPic {
   display: flex;
   justify-content: center;
 }
-.contectPage section.selfPic img {
+.contactPage section.selfPic img {
   width: 70vw;
   height: 70vw;
 }
-.contectPage section.selfInfo {
+.contactPage section.selfInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contectPage section.selfInfo section.top {
+.contactPage section.selfInfo section.top {
   width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contectPage section.selfInfo section.top h2 {
+.contactPage section.selfInfo section.top h2 {
   font-size: 1.125rem;
   opacity: 0.9;
   color: var(--theme-black);
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
-.contectPage section.selfInfo section.top h2 > span {
+.contactPage section.selfInfo section.top h2 > span {
   display: none;
 }
-.contectPage section.selfInfo section.top p {
+.contactPage section.selfInfo section.top p {
   font-size: 0.875rem;
   opacity: 0.7;
   color: var(--theme-black);
   text-align: justify;
   line-height: 192.5%;
   letter-spacing: 0.1rem;
-  margin: 0 0 1rem;
+  padding: 0 0 1rem;
 }
-.contectPage section.selfInfo section.bottom {
+.contactPage section.selfInfo section.bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2.25rem 0;
+  padding: 2.25rem 0;
   position: relative;
 }
-.contectPage section.selfInfo section.bottom h3 {
+.contactPage section.selfInfo section.bottom h3 {
   font-size: 0.75rem;
   opacity: 0.7;
   color: var(--theme-black);
@@ -396,7 +524,7 @@ ul {
   letter-spacing: normal;
   padding: 0.25rem;
 }
-.contectPage section.selfInfo section.bottom div.iconBox {
+.contactPage section.selfInfo section.bottom div.iconBox {
   margin-top: 0rem;
   position: absolute;
   bottom: 3.25rem;
@@ -405,15 +533,115 @@ ul {
   display: flex;
   justify-content: center;
 }
-.contectPage section.selfInfo section.bottom div.iconBox a {
-  margin: 0 0.75rem;
+.contactPage section.selfInfo section.bottom div.iconBox a {
+  padding: 0 0.75rem;
 }
-.contectPage section.selfInfo section.bottom div.iconBox a img {
+.contactPage section.selfInfo section.bottom div.iconBox a img {
   width: 20px;
   height: 20px;
   opacity: 0.5;
 }
 
+@media screen and (min-width: 993px) {
+  .contactPage {
+    flex-direction: row;
+    padding-top: 2rem;
+    width: 100vw;
+  }
+  .contactPage h1 {
+    display: none;
+  }
+  .contactPage section.selfPic {
+    width: 50%;
+    padding-top: 1rem;
+    justify-content: flex-end;
+    transform: translateX(-60px);
+  }
+  .contactPage section.selfPic img {
+    width: 25vw;
+    height: 25vw;
+  }
+  .contactPage section.selfInfo {
+    width: 50%;
+    justify-content: space-between;
+    align-items: inherit;
+    padding-left: 2.5rem;
+  }
+  .contactPage section.selfInfo section.top {
+    width: 60%;
+    align-items: flex-start;
+  }
+  .contactPage section.selfInfo section.top h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 1;
+    padding-bottom: 0rem;
+  }
+  .contactPage section.selfInfo section.top h2 > span {
+    display: inline;
+  }
+  .contactPage section.selfInfo section.top p {
+    font-size: 1.2rem;
+    line-height: 200%;
+    letter-spacing: 0.15rem;
+    padding: 2rem 0 0rem;
+  }
+  .contactPage section.selfInfo section.bottom {
+    align-items: unset;
+    padding: 0;
+    position: relative;
+  }
+  .contactPage section.selfInfo section.bottom h3 {
+    font-size: 1rem;
+    line-height: 200%;
+    letter-spacing: 0.05rem;
+    padding: 0;
+  }
+  .contactPage section.selfInfo section.bottom div.iconBox {
+    padding-top: 1rem;
+    position: unset;
+    justify-content: unset;
+  }
+  .contactPage section.selfInfo section.bottom div.iconBox a {
+    padding: 0 1rem 0 0;
+  }
+  .contactPage section.selfInfo section.bottom div.iconBox a img {
+    width: 35px;
+    height: 35px;
+  }
+  .contactPage section.selfInfo section.bottom div.iconBox a img:hover {
+    -webkit-animation: icon 0.35s forwards;
+            animation: icon 0.35s forwards;
+  }
+}
+@-webkit-keyframes icon {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes icon {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .fade-enter,
 .fade-appear {
   opacity: 0.01;

@@ -4,9 +4,9 @@ import InstagramIcon from "../assets/images/instagram.png";
 import FacebookIcon from "../assets/images/facebook.png";
 import HiShengChannelIcon from "../assets/images/HiShengChannel.png";
 
-const ContectPage = () => {
+const ContactPage = () => {
   return (
-    <div className="contectPage">
+    <div className="contactPage">
       <h1>Contect</h1>
       <section className="selfPic">
         <img src={SelfPic} alt="self picture" />
@@ -49,4 +49,4 @@ const ContectPage = () => {
   );
 };
 
-export default ContectPage;
+export default ContactPage;

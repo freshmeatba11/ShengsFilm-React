@@ -85,3 +85,19 @@
     filter: alpha(opacity=0);
   }
 }
+
+@media screen and (min-width: 993px) {
+  .imgSliderBox {
+    padding-top: 7rem;
+    .coverflow {
+      width: 60vw;
+      height: 50vh;
+      margin: 0 auto;
+      &:hover {
+        a {
+          animation-play-state: paused;
+        }
+      }
+    }
+  }
+}

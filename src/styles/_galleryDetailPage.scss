@@ -23,9 +23,8 @@
   .bottom {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     width: 80%;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     .titleWrap {
       display: flex;
       flex-wrap: wrap;
@@ -60,6 +59,48 @@
       opacity: 0.7;
       line-height: 203.2%;
       margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .galleryDetailPage {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: unset;
+    .top {
+      width: 50%;
+      padding: 1rem 2rem 0 0;
+      display: flex;
+      align-items: center;
+    }
+    .bottom {
+      width: 40%;
+      justify-content: space-between;
+      padding-top: 1rem;
+      .titleWrap {
+        justify-content: flex-start;
+      }
+      div {
+        position: inherit;
+        h2 {
+          font-size: 1.5rem;
+          line-height: 170%;
+          text-align: start;
+          font-weight: 600;
+        }
+      }
+      h3 {
+        width: 80%;
+        font-size: 1rem;
+        line-height: 180%;
+      }
+      p {
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        margin: 0;
+      }
     }
   }
 }
