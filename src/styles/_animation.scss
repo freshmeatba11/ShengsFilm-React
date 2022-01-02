@@ -1,12 +1,14 @@
 .fade-enter,
 .fade-appear {
   opacity: 0.01;
+  transform: translateY(2rem);
 }
 
 .fade-enter-active,
 .fade-appear-active {
   opacity: 1;
-  transition: all 1500ms ease-in;
+  transform: translateY(0);
+  transition: all 1500ms ease;
 }
 
 .fade-exit {
@@ -14,6 +16,28 @@
 }
 
 .fade-exit-active {
+  opacity: 0.01;
+  transition: all 1500ms ease-in;
+}
+
+.nav-enter,
+.nav-appear {
+  opacity: 0.01;
+  transform: translateY(-2rem);
+}
+
+.nav-enter-active,
+.nav-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1500ms ease;
+}
+
+.nav-exit {
+  opacity: 1;
+}
+
+.nav-exit-active {
   opacity: 0.01;
   transition: all 1500ms ease-in;
 }

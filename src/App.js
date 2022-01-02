@@ -31,7 +31,7 @@ function App() {
     <div>
       <SwitchTransition>
         <CSSTransition
-          classNames="fade"
+          classNames="nav"
           key={location.pathname}
           timeout={1500}
           unmountOnExit={true}
