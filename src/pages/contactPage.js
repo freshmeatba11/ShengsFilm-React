@@ -9,7 +9,7 @@ const ContactPage = () => {
     <div className="contactPage">
       <h1>Contect</h1>
       <section className="selfPic">
-        <img src={SelfPic} alt="self picture" />
+        <img src={SelfPic} alt="self" />
       </section>
 
       <section className="selfInfo">
