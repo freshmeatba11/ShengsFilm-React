@@ -608,7 +608,7 @@ ul {
 .fade-appear-active {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1500ms ease;
+  transition: all 1000ms ease;
 }
 
 .fade-exit {
@@ -617,7 +617,7 @@ ul {
 
 .fade-exit-active {
   opacity: 0.01;
-  transition: all 1500ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .nav-enter,
@@ -630,7 +630,7 @@ ul {
 .nav-appear-active {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1500ms ease;
+  transition: all 1000ms ease;
 }
 
 .nav-exit {
@@ -639,5 +639,5 @@ ul {
 
 .nav-exit-active {
   opacity: 0.01;
-  transition: all 1500ms ease-in;
+  transition: all 1000ms ease-in;
 }/*# sourceMappingURL=style.css.map */

@@ -34,7 +34,7 @@ function App() {
         <CSSTransition
           classNames="nav"
           key={location.pathname}
-          timeout={1500}
+          timeout={1000}
           unmountOnExit={true}
           appear
         >
@@ -46,7 +46,7 @@ function App() {
         <CSSTransition
           classNames="fade"
           key={location.pathname}
-          timeout={1500}
+          timeout={1000}
           unmountOnExit={true}
           appear
         >
