@@ -22,6 +22,7 @@ import BehindTheScene03Page from "./pages/behindTheScene03Page";
 import EditPage from "./pages/editPage";
 import Edit01Page from "./pages/edit01Page";
 import Edit02Page from "./pages/edit02Page";
+import CommercialPage from "./pages/commercialPage";
 import ContactPage from "./pages/contactPage";
 import "./styles/style.css";
 
@@ -79,6 +80,7 @@ function App() {
             <Route path="/edit" element={<EditPage />} />
             <Route path="/edit01" element={<Edit01Page />} />
             <Route path="/edit02" element={<Edit02Page />} />
+            <Route path="/commercial" element={<CommercialPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </CSSTransition>
