@@ -40,7 +40,8 @@
       display: none;
     }
     .threeCards {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       width: 90vw;
       padding-top: 3rem;

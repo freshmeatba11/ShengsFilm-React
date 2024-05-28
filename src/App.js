@@ -29,7 +29,7 @@ import "./styles/style.css";
 function App() {
   let location = useLocation();
   return (
-    <div>
+    <div className="app">
       <SwitchTransition>
         <CSSTransition
           classNames="nav"

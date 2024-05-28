@@ -1,48 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Album from "../components/gallery-album";
+import Cards from "../components/cards";
+
+const list = [
+  {
+    to: "/interview04",
+    cardText: Album.interview.interviewCardText04,
+    cardImg: Album.interview.interviewCard04,
+  },
+  {
+    to: "/interview01",
+    cardText: Album.interview.interviewCardText01,
+    cardImg: Album.interview.interviewCard01,
+  },
+  {
+    to: "/interview02",
+    cardText: Album.interview.interviewCardText02,
+    cardImg: Album.interview.interviewCard02,
+  },
+  {
+    to: "/interview03",
+    cardText: Album.interview.interviewCardText03,
+    cardImg: Album.interview.interviewCard03,
+  },
+];
 
 const InterviewPage = () => {
   return (
     <div className="galleryPage">
       <h1>Interview</h1>
       <section className="threeCards">
-        <div className="cards">
-          <Link to={"/interview01"} className="link">
-            <div className="mobileFilter">
-              <img
-                className="cardInfo"
-                src={Album.interview.interviewCardText01}
-                alt=""
-              />
-            </div>
-            <img src={Album.interview.interviewCard01} alt="" title="" />
-          </Link>
-        </div>
-        <div className="cards">
-          <Link to={"/interview02"} className="link">
-            <div className="mobileFilter">
-              <img
-                className="cardInfo"
-                src={Album.interview.interviewCardText02}
-                alt=""
-              />
-            </div>
-            <img src={Album.interview.interviewCard02} alt="" title="" />
-          </Link>
-        </div>
-        <div className="cards">
-          <Link to={"/interview03"} className="link">
-            <div className="mobileFilter">
-              <img
-                className="cardInfo"
-                src={Album.interview.interviewCardText03}
-                alt=""
-              />
-            </div>
-            <img src={Album.interview.interviewCard03} alt="" title="" />
-          </Link>
-        </div>
+        {list.map((item) => {
+          return <Cards key={item.to} {...item} />;
+        })}
       </section>
     </div>
   );

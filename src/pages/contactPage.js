@@ -14,12 +14,16 @@ const ContactPage = () => {
 
       <section className="selfInfo">
         <section className="top">
-          <h2>
-            王翔生 Sheng Wang <span className="mobileNoShow"> | Director</span>
-          </h2>
+          <h2>王翔生 Sheng Wang</h2>
           <p>
             Hi,
-            我是王翔生Sheng，有7年影音後製及拍攝經驗，2020年於青年職涯中心創客基地及中國文化大學開設單期影音講座。曾任職於朱宗慶打擊樂團幕後團隊及cacaFly聖洋科技，期間參與過多支品牌形象、宣傳廣告等影音製作。除了能獨立進行影音相關作業外，也多次擔任統籌PM，擅長協調品牌客戶及影音製作團隊之間的共識。目前仍持續創作中。
+            我是王翔生Sheng，有7年影音後製及拍攝經驗，2020年於青年職涯中心創客基地及中國文化大學開設單期影音講座。
+          </p>
+          <p>
+            曾任職於朱宗慶打擊樂團幕後團隊及cacaFly聖洋科技，期間參與過多支品牌形象、宣傳廣告等影音製作。
+          </p>
+          <p>
+            除了能獨立進行影音相關作業外，也多次擔任統籌PM，擅長協調品牌客戶及影音製作團隊之間的共識。目前仍持續創作中。
           </p>
         </section>
         <section className="bottom">
