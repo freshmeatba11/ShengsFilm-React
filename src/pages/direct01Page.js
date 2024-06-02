@@ -32,7 +32,7 @@ const Direct01Page = () => {
           <br />
           創意 Concept & Storyboard : 林冠婷 / 王翔生 / 陳韡誌
           <br />
-          攝影 Videography : 王翔生/ 陳韡誌
+          攝影 Videography : 王翔生 / 陳韡誌
           <br />
           主演 Lead starring : 李翠芸 / 李鴻基 / 張麗芬
           <br />
