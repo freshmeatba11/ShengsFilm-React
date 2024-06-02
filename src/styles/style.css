@@ -11,10 +11,11 @@
   font-weight: normal;
 }
 
-#root > div {
+#root > div.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 3rem 0;
 }
 
 a {
@@ -27,12 +28,12 @@ ul {
 }
 
 ::-moz-selection {
-  background: #b5b5b5;
+  background: hsl(0, 0%, 71%);
   color: white;
 }
 
 ::selection {
-  background: #b5b5b5;
+  background: hsl(0, 0%, 71%);
   color: white;
 }
 
@@ -76,7 +77,7 @@ ul {
   .nav-component ul li a:hover {
     opacity: 1;
   }
-  .nav-component ul li.active a {
+  .nav-component ul li a.active {
     opacity: 1;
   }
 }
@@ -178,75 +179,47 @@ ul {
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-animation: slider 30s linear infinite;
-          animation: slider 30s linear infinite;
+  animation: slider 30s linear infinite;
   /*每個圖片各延遲10秒*/
 }
 .imgSliderBox .coverflow a img {
   max-width: 100%;
 }
 .imgSliderBox .coverflow a:nth-child(3) {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
+  animation-delay: 20s;
 }
 .imgSliderBox .coverflow a:nth-child(2) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  animation-delay: 10s;
 }
 .imgSliderBox .coverflow a:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 .imgSliderBox #secondSlide a:nth-child(3) {
-  -webkit-animation-delay: 21s;
-          animation-delay: 21s;
+  animation-delay: 21s;
 }
 .imgSliderBox #secondSlide a:nth-child(2) {
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
+  animation-delay: 11s;
 }
 .imgSliderBox #secondSlide a:nth-child(1) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 .imgSliderBox #thirdSlide a:nth-child(3) {
-  -webkit-animation-delay: 22s;
-          animation-delay: 22s;
+  animation-delay: 22s;
 }
 .imgSliderBox #thirdSlide a:nth-child(2) {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+  animation-delay: 12s;
 }
 .imgSliderBox #thirdSlide a:nth-child(1) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 .imgSliderBox #forthSlide a:nth-child(3) {
-  -webkit-animation-delay: 23s;
-          animation-delay: 23s;
+  animation-delay: 23s;
 }
 .imgSliderBox #forthSlide a:nth-child(2) {
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  animation-delay: 13s;
 }
 .imgSliderBox #forthSlide a:nth-child(1) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-@-webkit-keyframes slider {
-  3% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  27% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  30% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
+  animation-delay: 3s;
 }
 
 @keyframes slider {
@@ -273,8 +246,7 @@ ul {
     margin: 0 auto;
   }
   .imgSliderBox .coverflow:hover a {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+    animation-play-state: paused;
   }
 }
 .homePage {
@@ -328,7 +300,8 @@ ul {
     display: none;
   }
   .galleryPage .threeCards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     width: 90vw;
     padding-top: 3rem;
@@ -514,6 +487,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 2.25rem 0;
+  margin-top: 3rem;
   position: relative;
 }
 .contactPage section.selfInfo section.bottom h3 {
@@ -525,8 +499,7 @@ ul {
   padding: 0.25rem;
 }
 .contactPage section.selfInfo section.bottom div.iconBox {
-  margin-top: 0rem;
-  position: absolute;
+  margin-top: 1rem;
   bottom: 3.25rem;
   left: 0;
   right: 0;
@@ -599,7 +572,6 @@ ul {
   }
   .contactPage section.selfInfo section.bottom div.iconBox {
     padding-top: 1rem;
-    position: unset;
     justify-content: unset;
   }
   .contactPage section.selfInfo section.bottom div.iconBox a {
@@ -610,22 +582,7 @@ ul {
     height: 35px;
   }
   .contactPage section.selfInfo section.bottom div.iconBox a img:hover {
-    -webkit-animation: icon 0.35s forwards;
-            animation: icon 0.35s forwards;
-  }
-}
-@-webkit-keyframes icon {
-  0% {
-    opacity: 0.7;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+    animation: icon 0.35s forwards;
   }
 }
 @keyframes icon {
@@ -652,7 +609,7 @@ ul {
 .fade-appear-active {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1500ms ease;
+  transition: all 1000ms ease;
 }
 
 .fade-exit {
@@ -661,20 +618,18 @@ ul {
 
 .fade-exit-active {
   opacity: 0.01;
-  transition: all 1500ms ease-in;
+  transition: all 1000ms ease-in;
 }
 
 .nav-enter,
 .nav-appear {
   opacity: 0.01;
-  transform: translateY(-2rem);
 }
 
 .nav-enter-active,
 .nav-appear-active {
   opacity: 1;
-  transform: translateY(0);
-  transition: all 1500ms ease;
+  transition: all 1000ms ease;
 }
 
 .nav-exit {
@@ -683,5 +638,28 @@ ul {
 
 .nav-exit-active {
   opacity: 0.01;
-  transition: all 1500ms ease-in;
+  transition: all 1000ms ease-in;
+}
+
+@media screen and (min-width: 993px) {
+  .nav-enter,
+  .nav-appear {
+    opacity: 0.01;
+    /* transform: translateY(-2rem); */
+    translate: 0 -2rem;
+  }
+  .nav-enter-active,
+  .nav-appear-active {
+    opacity: 1;
+    /* transform: translateY(0); */
+    translate: 0 0;
+    transition: all 1000ms ease;
+  }
+  .nav-exit {
+    opacity: 1;
+  }
+  .nav-exit-active {
+    opacity: 0.01;
+    transition: all 1000ms ease-in;
+  }
 }/*# sourceMappingURL=style.css.map */

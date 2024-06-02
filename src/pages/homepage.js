@@ -2,21 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useRWD from "../useRWD";
 import ImgSliderComponent from "../components/img-slider-component";
-import slideImg01 from "../assets/images/imgSlider/slideImg01.png";
-import slideImg02 from "../assets/images/imgSlider/slideImg02.png";
-import slideImg03 from "../assets/images/imgSlider/slideImg03.png";
-import slideImg04 from "../assets/images/imgSlider/slideImg04.png";
-import slideImg05 from "../assets/images/imgSlider/slideImg05.png";
-import slideImg06 from "../assets/images/imgSlider/slideImg06.png";
-import slideImg07 from "../assets/images/imgSlider/slideImg07.png";
-import slideImg08 from "../assets/images/imgSlider/slideImg08.png";
+import CoverPhoto01 from "../assets/images/imgSlider/CoverPhoto01.png";
+import CoverPhoto02 from "../assets/images/imgSlider/CoverPhoto02.png";
+import CoverPhoto03 from "../assets/images/imgSlider/CoverPhoto03.png";
+import CoverPhoto04 from "../assets/images/imgSlider/CoverPhoto04.png";
+import CoverPhoto05 from "../assets/images/imgSlider/CoverPhoto05.png";
+import CoverPhoto06 from "../assets/images/imgSlider/CoverPhoto06.png";
+import CoverPhoto07 from "../assets/images/imgSlider/CoverPhoto07.jpg";
+import CoverPhoto08 from "../assets/images/imgSlider/CoverPhoto08.jpg";
+import CoverPhoto09 from "../assets/images/imgSlider/CoverPhoto09.jpg";
 
 const Homepage = () => {
   let device = useRWD();
-  const imgArr1 = [slideImg01, slideImg04, slideImg03];
-  const imgArr2 = [slideImg06, slideImg07, slideImg08];
-  const imgArr3 = [slideImg02, slideImg03, slideImg06];
-  const imgArr4 = [slideImg04, slideImg05, slideImg01];
+  const imgArr1 = [CoverPhoto01, CoverPhoto02, CoverPhoto03];
+  const imgArr2 = [CoverPhoto05, CoverPhoto07, CoverPhoto08];
+  const imgArr3 = [CoverPhoto09, CoverPhoto06, CoverPhoto04];
+  const imgArr4 = [CoverPhoto04, CoverPhoto05, CoverPhoto06];
+
   const animationDelay1 = "";
   const animationDelay2 = "secondSlide";
   const animationDelay3 = "thirdSlide";
