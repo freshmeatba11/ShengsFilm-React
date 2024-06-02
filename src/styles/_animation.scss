@@ -23,13 +23,13 @@
 .nav-enter,
 .nav-appear {
   opacity: 0.01;
-  transform: translateY(-2rem);
+  // transform: translateY(-2rem);
 }
 
 .nav-enter-active,
 .nav-appear-active {
   opacity: 1;
-  transform: translateY(0);
+  // transform: translateY(0);
   transition: all 1000ms ease;
 }
 
@@ -40,4 +40,29 @@
 .nav-exit-active {
   opacity: 0.01;
   transition: all 1000ms ease-in;
+}
+@media screen and (min-width: 993px) {
+  .nav-enter,
+  .nav-appear {
+    opacity: 0.01;
+    /* transform: translateY(-2rem); */
+    translate: 0 -2rem;
+  }
+
+  .nav-enter-active,
+  .nav-appear-active {
+    opacity: 1;
+    /* transform: translateY(0); */
+    translate: 0 0;
+    transition: all 1000ms ease;
+  }
+
+  .nav-exit {
+    opacity: 1;
+  }
+
+  .nav-exit-active {
+    opacity: 0.01;
+    transition: all 1000ms ease-in;
+  }
 }
