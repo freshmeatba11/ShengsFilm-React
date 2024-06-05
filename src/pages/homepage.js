@@ -14,10 +14,51 @@ import CoverPhoto09 from "../assets/images/imgSlider/CoverPhoto09.jpg";
 
 const Homepage = () => {
   let device = useRWD();
-  const imgArr1 = [CoverPhoto01, CoverPhoto02, CoverPhoto03];
-  const imgArr2 = [CoverPhoto05, CoverPhoto07, CoverPhoto08];
-  const imgArr3 = [CoverPhoto09, CoverPhoto06, CoverPhoto04];
-  const imgArr4 = [CoverPhoto04, CoverPhoto05, CoverPhoto06];
+  const imgArr1 = [
+    CoverPhoto01,
+    CoverPhoto02,
+    CoverPhoto03,
+    CoverPhoto04,
+    CoverPhoto05,
+    CoverPhoto06,
+    CoverPhoto07,
+    CoverPhoto08,
+    CoverPhoto09,
+  ];
+  //隨機
+  const imgArr2 = [
+    CoverPhoto03,
+    CoverPhoto04,
+    CoverPhoto05,
+    CoverPhoto06,
+    CoverPhoto07,
+    CoverPhoto08,
+    CoverPhoto09,
+    CoverPhoto01,
+    CoverPhoto02,
+  ];
+  const imgArr3 = [
+    CoverPhoto08,
+    CoverPhoto09,
+    CoverPhoto01,
+    CoverPhoto02,
+    CoverPhoto03,
+    CoverPhoto04,
+    CoverPhoto05,
+    CoverPhoto06,
+    CoverPhoto07,
+  ];
+  const imgArr4 = [
+    CoverPhoto05,
+    CoverPhoto06,
+    CoverPhoto07,
+    CoverPhoto08,
+    CoverPhoto09,
+    CoverPhoto01,
+    CoverPhoto02,
+    CoverPhoto03,
+    CoverPhoto04,
+  ];
 
   const animationDelay1 = "";
   const animationDelay2 = "secondSlide";
