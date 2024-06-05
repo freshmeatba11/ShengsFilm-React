@@ -6,15 +6,11 @@ const ImgSliderComponent = (props) => {
   return (
     <div className="imgSliderBox">
       <div id={animationDelay} className="coverflow">
-        <a href="/">
-          <img src={imgArr[0]} alt=" " />
-        </a>
-        <a href="/">
-          <img src={imgArr[1]} alt=" " />
-        </a>
-        <a href="/">
-          <img src={imgArr[2]} alt=" " />
-        </a>
+        {imgArr.map((img, index) => (
+          <a href="/" key={index}>
+            <img src={img} alt=" " />
+          </a>
+        ))}
       </div>
     </div>
   );

@@ -179,47 +179,119 @@ ul {
   bottom: 0;
   right: 0;
   opacity: 0;
-  animation: slider 30s linear infinite;
+  animation: slider 90s linear infinite;
   /*每個圖片各延遲10秒*/
 }
 .imgSliderBox .coverflow a img {
   max-width: 100%;
 }
-.imgSliderBox .coverflow a:nth-child(3) {
-  animation-delay: 20s;
+.imgSliderBox .coverflow a:nth-child(1) {
+  animation-delay: 0s;
 }
 .imgSliderBox .coverflow a:nth-child(2) {
   animation-delay: 10s;
 }
-.imgSliderBox .coverflow a:nth-child(1) {
-  animation-delay: 0s;
+.imgSliderBox .coverflow a:nth-child(3) {
+  animation-delay: 20s;
 }
-.imgSliderBox #secondSlide a:nth-child(3) {
-  animation-delay: 21s;
+.imgSliderBox .coverflow a:nth-child(4) {
+  animation-delay: 30s;
 }
-.imgSliderBox #secondSlide a:nth-child(2) {
-  animation-delay: 11s;
+.imgSliderBox .coverflow a:nth-child(5) {
+  animation-delay: 40s;
+}
+.imgSliderBox .coverflow a:nth-child(6) {
+  animation-delay: 50s;
+}
+.imgSliderBox .coverflow a:nth-child(7) {
+  animation-delay: 60s;
+}
+.imgSliderBox .coverflow a:nth-child(8) {
+  animation-delay: 70s;
+}
+.imgSliderBox .coverflow a:nth-child(9) {
+  animation-delay: 80s;
 }
 .imgSliderBox #secondSlide a:nth-child(1) {
   animation-delay: 1s;
 }
-.imgSliderBox #thirdSlide a:nth-child(3) {
-  animation-delay: 22s;
+.imgSliderBox #secondSlide a:nth-child(2) {
+  animation-delay: 11s;
 }
-.imgSliderBox #thirdSlide a:nth-child(2) {
-  animation-delay: 12s;
+.imgSliderBox #secondSlide a:nth-child(3) {
+  animation-delay: 21s;
+}
+.imgSliderBox #secondSlide a:nth-child(4) {
+  animation-delay: 31s;
+}
+.imgSliderBox #secondSlide a:nth-child(5) {
+  animation-delay: 41s;
+}
+.imgSliderBox #secondSlide a:nth-child(6) {
+  animation-delay: 51s;
+}
+.imgSliderBox #secondSlide a:nth-child(7) {
+  animation-delay: 61s;
+}
+.imgSliderBox #secondSlide a:nth-child(8) {
+  animation-delay: 71s;
+}
+.imgSliderBox #secondSlide a:nth-child(9) {
+  animation-delay: 81s;
 }
 .imgSliderBox #thirdSlide a:nth-child(1) {
   animation-delay: 2s;
 }
-.imgSliderBox #forthSlide a:nth-child(3) {
-  animation-delay: 23s;
+.imgSliderBox #thirdSlide a:nth-child(2) {
+  animation-delay: 12s;
+}
+.imgSliderBox #thirdSlide a:nth-child(3) {
+  animation-delay: 22s;
+}
+.imgSliderBox #thirdSlide a:nth-child(4) {
+  animation-delay: 32s;
+}
+.imgSliderBox #thirdSlide a:nth-child(5) {
+  animation-delay: 42s;
+}
+.imgSliderBox #thirdSlide a:nth-child(6) {
+  animation-delay: 52s;
+}
+.imgSliderBox #thirdSlide a:nth-child(7) {
+  animation-delay: 62s;
+}
+.imgSliderBox #thirdSlide a:nth-child(8) {
+  animation-delay: 72s;
+}
+.imgSliderBox #thirdSlide a:nth-child(9) {
+  animation-delay: 82s;
+}
+.imgSliderBox #forthSlide a:nth-child(1) {
+  animation-delay: 3s;
 }
 .imgSliderBox #forthSlide a:nth-child(2) {
   animation-delay: 13s;
 }
-.imgSliderBox #forthSlide a:nth-child(1) {
-  animation-delay: 3s;
+.imgSliderBox #forthSlide a:nth-child(3) {
+  animation-delay: 23s;
+}
+.imgSliderBox #forthSlide a:nth-child(4) {
+  animation-delay: 33s;
+}
+.imgSliderBox #forthSlide a:nth-child(5) {
+  animation-delay: 43s;
+}
+.imgSliderBox #forthSlide a:nth-child(6) {
+  animation-delay: 53s;
+}
+.imgSliderBox #forthSlide a:nth-child(7) {
+  animation-delay: 63s;
+}
+.imgSliderBox #forthSlide a:nth-child(8) {
+  animation-delay: 73s;
+}
+.imgSliderBox #forthSlide a:nth-child(9) {
+  animation-delay: 83s;
 }
 
 @keyframes slider {
@@ -244,6 +316,11 @@ ul {
     width: 60vw;
     height: 50vh;
     margin: 0 auto;
+  }
+  .imgSliderBox .coverflow a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
   .imgSliderBox .coverflow:hover a {
     animation-play-state: paused;
