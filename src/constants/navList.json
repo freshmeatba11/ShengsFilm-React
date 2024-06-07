@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Direct",
+    "path": "/direct"
+  },
+  {
+    "name": "Trailer",
+    "path": "/trailer"
+  },
+  {
+    "name": "Interview",
+    "path": "/interview"
+  },
+  {
+    "name": "Behind the Scene",
+    "path": "/behind_the_scene"
+  },
+  {
+    "name": "Edit",
+    "path": "/edit"
+  },
+  {
+    "name": "Commercial",
+    "path": "/commercial"
+  },
+  {
+    "name": "Contact",
+    "path": "/contact"
+  }
+]
