@@ -23,14 +23,26 @@ const list = [
     cardText: Album.commercial.commercialText04,
     cardImg: Album.commercial.commercial04,
   },
+  {
+    to: "/commercial05",
+    cardText: Album.commercial.commercialText05,
+    cardImg: Album.commercial.commercial05,
+  },
 ];
 
-const EditPage = () => {
+const CommercialPage = () => {
   return (
     <div className="galleryPage">
       <h1>Commercial</h1>
       <section className="threeCards">
         {list.map((item, index) => {
+          if (index === 4) {
+            // 2024年6月17日以後才會顯示
+            if (new Date() > new Date("2024-06-17")) {
+              return <Cards key={index} {...item} />;
+            }
+            return null;
+          }
           return <Cards key={index} {...item} />;
         })}
       </section>
@@ -38,4 +50,4 @@ const EditPage = () => {
   );
 };
 
-export default EditPage;
+export default CommercialPage;

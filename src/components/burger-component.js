@@ -1,59 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import navList from "../constants/navList.json";
 
 const BurgerComponent = () => {
-  const burgerBtnHandler = (e) => {
-    let btn = document.querySelector("label.burger").children;
-    btn[0].classList.toggle("change");
-    let burgerNav = document.querySelector("#burgerNav");
-    burgerNav.classList.toggle("open");
-  };
+  const [isOpen, setIsOpen] = useState(false);
+
+  const burgerBtnHandler = () => setIsOpen((prev) => !prev);
 
   return (
     <div className="burgerComponent">
       <input type="checkbox" name="menu-switcher" id="menu-switcher" />
       <label htmlFor="menu-switcher" className="burger">
-        <div className="container" onClick={burgerBtnHandler}>
+        <div
+          className={`container ${isOpen ? "change" : ""}`}
+          onClick={burgerBtnHandler}
+        >
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
       </label>
-      <nav id="burgerNav">
+      <nav id="burgerNav" className={`${isOpen ? "open" : ""}`}>
         <Link to={"/"} onClick={burgerBtnHandler}>
           Sheng's Film
         </Link>
         <ul>
-          <li>
-            <Link to={"/direct"} onClick={burgerBtnHandler}>
-              Direct
-            </Link>
-          </li>
-          <li>
-            <Link to={"/trailer"} onClick={burgerBtnHandler}>
-              Trailer
-            </Link>
-          </li>
-          <li>
-            <Link to={"/interview"} onClick={burgerBtnHandler}>
-              Interview
-            </Link>
-          </li>
-          <li>
-            <Link to={"/behind_the_scene"} onClick={burgerBtnHandler}>
-              Behind the Scene
-            </Link>
-          </li>
-          <li>
-            <Link to={"/edit"} onClick={burgerBtnHandler}>
-              Edit
-            </Link>
-          </li>
-          <li>
-            <Link to={"/contact"} onClick={burgerBtnHandler}>
-              Contact
-            </Link>
-          </li>
+          {navList.map((item) => (
+            <li key={item.name}>
+              <Link to={item.path} onClick={burgerBtnHandler}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

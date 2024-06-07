@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import BurgerComponent from "./burger-component";
+import navList from "../constants/navList.json";
 
 const NavComponent = () => {
   return (
@@ -12,27 +13,11 @@ const NavComponent = () => {
       </Link>
 
       <ul>
-        <li>
-          <NavLink to={"/direct"}>Direct</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/trailer"}>Trailer</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/interview"}>Interview</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/behind_the_scene"}>Behind the Scene</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/edit"}>Edit</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/commercial"}>Commercial</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/contact"}>Contact</NavLink>
-        </li>
+        {navList.map((nav) => (
+          <li key={nav.name}>
+            <NavLink to={nav.path}>{nav.name}</NavLink>
+          </li>
+        ))}
       </ul>
     </div>
   );

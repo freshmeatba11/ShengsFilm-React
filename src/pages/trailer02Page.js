@@ -1,12 +1,12 @@
 import React from "react";
 import data from "../project.json";
 
-const Commercial03Page = () => {
+const Trailer02Page = () => {
   const project = {
-    url: data[8].url,
-    title: data[8].title,
+    url: data[11].url,
+    title: data[11].title,
     description: [],
-    credit: data[8].credit,
+    credit: data[11].credit,
   };
   //將字串分割成陣列
   const credit = project.credit.split("\n");
@@ -41,10 +41,10 @@ const Commercial03Page = () => {
             if (index === arr.length - 1)
               return <React.Fragment key={index}>{credit}</React.Fragment>;
             return (
-              <React.Fragment key={index}>
-                {credit}
+              <>
+                <React.Fragment key={index}>{credit}</React.Fragment>
                 <br />
-              </React.Fragment>
+              </>
             );
           })}
         </p>
@@ -53,4 +53,4 @@ const Commercial03Page = () => {
   );
 };
 
-export default Commercial03Page;
+export default Trailer02Page;
