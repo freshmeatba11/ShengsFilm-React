@@ -9,6 +9,7 @@ import Direct02Page from "./pages/direct02Page";
 import Direct03Page from "./pages/direct03Page";
 import TrailerPage from "./pages/trailerPage";
 import Trailer01Page from "./pages/trailer01Page";
+import Trailer02Page from "./pages/trailer02Page";
 import Trailer03Page from "./pages/trailer03Page";
 import Trailer04Page from "./pages/trailer04Page";
 import InterviewPage from "./pages/interviewPage";
@@ -30,6 +31,7 @@ import Commercial01Page from "./pages/commercial01Page";
 import Commercial02Page from "./pages/commercial02Page";
 import Commercial03Page from "./pages/commercial03Page";
 import Commercial04Page from "./pages/commercial04Page";
+import Commercial05Page from "./pages/commercial05Page";
 import ContactPage from "./pages/contactPage";
 import "./styles/style.css";
 
@@ -65,6 +67,7 @@ function App() {
             <Route path="/direct03" element={<Direct03Page />} />
             <Route path="/trailer" element={<TrailerPage />} />
             <Route path="/trailer01" element={<Trailer01Page />} />
+            <Route path="/trailer02" element={<Trailer02Page />} />
             <Route path="/trailer03" element={<Trailer03Page />} />
             <Route path="/trailer04" element={<Trailer04Page />} />
             <Route path="/interview" element={<InterviewPage />} />
@@ -101,6 +104,10 @@ function App() {
             <Route path="/commercial02" element={<Commercial02Page />} />
             <Route path="/commercial03" element={<Commercial03Page />} />
             <Route path="/commercial04" element={<Commercial04Page />} />
+            {/* 2024年6月17日以後才會顯示 */}
+            {new Date() > new Date("2024-06-17") && (
+              <Route path="/commercial05" element={<Commercial05Page />} />
+            )}
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </CSSTransition>

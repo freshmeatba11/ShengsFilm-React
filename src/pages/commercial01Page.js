@@ -41,10 +41,10 @@ const Commercial01Page = () => {
             if (index === arr.length - 1)
               return <React.Fragment key={index}>{credit}</React.Fragment>;
             return (
-              <>
-                <React.Fragment key={index}>{credit}</React.Fragment>
+              <React.Fragment key={index}>
+                {credit}
                 <br />
-              </>
+              </React.Fragment>
             );
           })}
         </p>

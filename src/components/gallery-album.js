@@ -38,10 +38,12 @@ import commercial01 from "../assets/images/commercial/06Godiva2.jpg";
 import commercial02 from "../assets/images/commercial/08FunproRecruiting2.jpg";
 import commercial03 from "../assets/images/commercial/09ShihEnFarmEggBox2.jpg";
 import commercial04 from "../assets/images/commercial/10TaitraFoodiverse2.jpg";
+import commercial05 from "../assets/images/commercial/11Laimo2.jpg";
 import commercialText01 from "../assets/images/commercial/06Godiva1.jpg";
 import commercialText02 from "../assets/images/commercial/08FunproRecruiting1.jpg";
 import commercialText03 from "../assets/images/commercial/09ShihEnFarmEggBox1.jpg";
 import commercialText04 from "../assets/images/commercial/10TaitraFoodiverse1.jpg";
+import commercialText05 from "../assets/images/commercial/11Laimo1.jpg";
 
 const GalleryAlbum = {
   direct: {
@@ -95,10 +97,12 @@ const GalleryAlbum = {
     commercial02,
     commercial03,
     commercial04,
+    commercial05,
     commercialText01,
     commercialText02,
     commercialText03,
     commercialText04,
+    commercialText05,
   },
 };
 
